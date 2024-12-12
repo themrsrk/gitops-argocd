@@ -14,13 +14,9 @@ spec:
     metadata:
       labels:
         app: solar-system
-    spec:
-      initContainers:
-      - name: init-sleep
-        image: busybox
-        command: ["sh", "-c", "echo 'Waiting for 1 minute...'; sleep 60"]    
+    spec:  
       containers:
-      - image: siddharth67/solar-system:v8
+      - image: nginx
         name: solar-system
         imagePullPolicy: Always
         ports: 
