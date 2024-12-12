@@ -16,7 +16,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/final-solar
+      - image: siddharth67/gitops-demo
         name: solar-system
         imagePullPolicy: Always
         ports: 
