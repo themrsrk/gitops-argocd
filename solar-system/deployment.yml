@@ -19,7 +19,7 @@ spec:
       - image: siddharth67/solar-system:v4
         name: solar-system
         command: ["/bin/sh", "-c"]
-        args: ["sleep 600]
+        args: ["sleep 600"]
         imagePullPolicy: Always
         ports: 
         - containerPort: 80
