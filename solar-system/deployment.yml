@@ -18,7 +18,9 @@ spec:
       containers:
       - image: siddharth67/solar-system:v3
         name: solar-system
-        command: ["/bin/bash", "-c", "sleep 3600"]
+        command:
+           - "sleep"
+           - "3600"        
         imagePullPolicy: Always
         ports: 
         - containerPort: 80
