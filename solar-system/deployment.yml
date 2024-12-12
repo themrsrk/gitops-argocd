@@ -16,10 +16,8 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/solar-system:v4
+      - image: siddharth67/solar-system:v3
         name: solar-system
-        command: ["/bin/sh", "-c"]
-        args: ["sleep 600"]
         imagePullPolicy: Always
         ports: 
         - containerPort: 80
