@@ -19,6 +19,7 @@ spec:
       - image: siddharth67/solar-system:v3
         name: solar-system
         command:
+           - "/bin/sh -c"
            - "sleep"
            - "3600"        
         imagePullPolicy: Always
